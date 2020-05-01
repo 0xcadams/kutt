@@ -121,7 +121,7 @@ const Shortener = () => {
 
   const title = !link && (
     <H1 fontSize={[25, 27, 32]} light>
-      Kutt your links{" "}
+      Make your links{" "}
       <Span style={{ borderBottom: "2px dotted #999" }} light>
         shorter
       </Span>
@@ -187,7 +187,7 @@ const Shortener = () => {
         width={1}
         alignItems="center"
         justifyContent="center"
-        style={{ position: "relative" }}
+        style={{ position: "relative", marginBottom: 400 }}
         onSubmit={onSubmit}
       >
         <TextInput
@@ -219,7 +219,7 @@ const Shortener = () => {
           {message.text}
         </Text>
       )}
-      <Checkbox
+      {/* <Checkbox
         {...raw({
           name: "showAdvanced",
           onChange: e => {
@@ -236,7 +236,7 @@ const Shortener = () => {
         label="Show advanced options"
         mt={[3, 24]}
         alignSelf="flex-start"
-      />
+      /> */}
       {formState.values.showAdvanced && (
         <Flex mt={4} flexDirection={["column", "row"]}>
           <Col mb={[3, 0]}>

@@ -259,6 +259,7 @@ export const deleteCustomDomain: Handler = async (req, res) => {
 
 export const customDomainRedirection: Handler = async (req, res, next) => {
   const { headers, path } = req;
+
   if (
     headers.host !== env.DEFAULT_DOMAIN &&
     (path === "/" ||

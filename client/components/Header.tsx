@@ -125,17 +125,17 @@ const Header: FC = () => {
                 GitHub
               </ALink>
             </Li>
-            <Li>
+            {/* <Li>
               <Link href="/report">
                 <ALink href="/report" title="Report abuse" fontSize={[14, 16]}>
                   Report
                 </ALink>
               </Link>
-            </Li>
+            </Li> */}
           </Flex>
         )}
       </Flex>
-      <RowCenterV
+      {/* <RowCenterV
         m={0}
         p={0}
         justifyContent="flex-end"
@@ -154,7 +154,7 @@ const Header: FC = () => {
         {logout}
         {settings}
         {login}
-      </RowCenterV>
+      </RowCenterV> */}
     </Flex>
   );
 };
